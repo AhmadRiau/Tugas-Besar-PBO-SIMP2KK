@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d657b72c-b475-4628-acbd-f4c7cb5be2b8">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from petugas where nomor_petugas != 0;]]>
+	</queryString>
+	<field name="nomor_petugas" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_petugas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jk_petugas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bidang_petugas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ruang_petugas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jadwal_petugas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam_kerja" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="ec08a581-1342-4008-94cd-dbfb13f0875c" mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699"/>
+				<staticText>
+					<reportElement uuid="763cfd77-a1e4-44b3-bcf3-9b5a5c8acb45" x="20" y="20" width="260" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Daftar Petugas]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b647849e-c5ee-466b-b5e8-5dbc3c3e8abf" x="395" y="43" width="180" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[ ]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement uuid="531a637a-aa79-4308-a626-a8fdcb53cd31" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="1002dbbf-7b37-4dd5-bcbf-6dd741d6f3bb" mode="Opaque" x="0" y="0" width="31" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9cefd95b-0f4f-4be3-adaf-60b479c22bc2" mode="Opaque" x="31" y="0" width="127" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Nama Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d52dfc43-c612-4b72-ae4a-9310429e9b28" mode="Opaque" x="158" y="0" width="73" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0d3cb805-023c-4404-a964-a55a15dc27f7" mode="Opaque" x="231" y="0" width="70" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bidang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="84bb0565-5d08-40cf-91ba-3e5a4eb62e20" mode="Opaque" x="301" y="0" width="99" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ruangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7721c384-2e12-4785-bbe3-5bb1e51d9b1f" mode="Opaque" x="400" y="0" width="74" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jadwal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e6de2ca-bd40-47c2-948b-d81fa0e4c1ff" mode="Opaque" x="474" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jam Kerja]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement uuid="1eb5dad7-c117-46ad-9339-2f75f38a0858" positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="092ae978-1c2a-452c-aab9-4125414c0628" x="0" y="0" width="31" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomor_petugas}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="1b1382fa-2371-4b38-ae2f-20dacaafe2a7" x="31" y="0" width="127" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_petugas}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="0de493dc-e2fb-4916-a3ea-33ec0968e30e" x="158" y="0" width="73" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jk_petugas}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="a34c994c-9557-48c1-96d3-d8a1ceac671d" x="231" y="0" width="70" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bidang_petugas}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="0e021c40-c610-44c9-9f61-a3d93d1d7ace" x="301" y="0" width="99" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ruang_petugas}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="a021c76c-6f6d-4ed3-99ef-b7466102872c" x="400" y="0" width="74" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jadwal_petugas}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="a17080a4-21c8-4b2b-91be-933237e73387" x="474" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jam_kerja}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="39eeded9-53f3-42df-935a-8c750fc3f598" mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="425ecc82-d264-4898-bfeb-c18a9dbe6eab" mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="3442aa27-ab00-4635-9476-e82385e5b00e" x="0" y="4" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

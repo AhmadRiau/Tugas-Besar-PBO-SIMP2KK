@@ -1,0 +1,1 @@
+berkas simp2kk.sql berisi database untuk aplikasi ini
